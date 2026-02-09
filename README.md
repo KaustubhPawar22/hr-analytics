@@ -21,26 +21,20 @@ An interactive Tableau dashboard complements the Python analysis for executive e
 
 ## Project Structure
 
-hr-analytics/
-│
-├ notebooks/
-│ ├ hr_storytelling_final.ipynb # Business insights & executive storytelling
-│ └ hr_crispdm_final_report.ipynb # CRISP-DM modeling pipeline
-│
-├ data/
-│ └ HumanResources_India.csv
-│
-├ artifacts/ # Optional PDFs / presentation assets
-├ README.md
-├ requirements.txt
-└ LICENSE
-
+- notebooks/
+  - hr_storytelling_final.ipynb
+  - hr_crispdm_final_report.ipynb
+- data/
+  - HumanResources_India.csv
+- artifacts/
+- README.md
+- requirements.txt
 
 ---
 
-## 📊 Part A — Workforce Analytics (Business Storytelling)
+## Part A — Workforce Analytics (Business Storytelling)
 
-**File:** `notebooks/hr_storytelling_final.ipynb`
+**File:** `notebooks/hr_analytics.ipynb`
 
 This notebook focuses on descriptive analytics and strategic workforce insights.
 
@@ -70,9 +64,9 @@ No machine learning is used in Part A — this is purely business analytics.
 
 ---
 
-## 🤖 Part B — Attrition Modeling (CRISP-DM)
+## Part B — Attrition Modeling (CRISP-DM)
 
-**File:** `notebooks/hr_crispdm_final_report.ipynb`
+**File:** `notebooks/CRISPDM_report.ipynb`
 
 This notebook implements a full CRISP-DM modeling pipeline:
 
