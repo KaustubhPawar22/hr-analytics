@@ -64,31 +64,31 @@ This ensures full reproducibility and transparency of assumptions.
 
 | Column | Description |
 |--------|------------|
-| employee_id | Unique employee identifier |
+| employee_id | Unique identifier assigned to each employee |
 | first_name | Employee first name |
 | last_name | Employee last name |
-| gender | Male / Female |
+| gender | Employee gender (Male / Female) |
 | city | City of employment |
 | state | State of employment |
 | hiredate | Employee hire date |
 | termdate | Termination date (null if active) |
-| department | Department assignment |
-| job_title | Role title |
-| education_level | Highest education attained |
-| performance_rating | Most recent performance evaluation |
-| overtime | Indicates overtime status |
+| department | Department of employment (IT, Sales, Finance, Marketing, HR, Operations, Customer Service) |
+| job_title | Employee job title |
+| education_level | Highest educational qualification attained |
+| performance_rating | Most recent performance evaluation (Excellent, Good, Satisfactory, Needs Improvement) |
+| overtime | Indicates whether employee regularly works overtime (Yes / No) |
 | salary | Annual salary |
-| birthdate | Date of birth |
+| birthdate | Employee date of birth |
 
 ### Engineered Fields (created during analysis)
 
-| Column | Description |
-|--------|------------|
-| age | Calculated from birthdate |
-| tenure_years | Years since hire |
-| is_terminated | Boolean attrition flag |
-| hire_year | Year hired |
-| tenure_band | Binned tenure category |
+| Column Name | Description |
+|------------|-------------|
+| age | Employee age calculated from birthdate |
+| tenure_years | Length of service in years calculated from hiredate |
+| is_terminated | Boolean flag indicating employee attrition (True = terminated) |
+| hire_year | Year employee was hired |
+| tenure_band | Tenure segmentation bucket (0–2, 2–5, 5–8, 8+ years) |  
 | salary_to_dept_median | Salary normalized by department median |
 
 ---
