@@ -31,9 +31,8 @@ hr-analytics/
 │   └ HumanResources_India.csv   
 │   
 ├ scripts/   
-│   └ generate_hr_data.py   
-│   
-├ artifacts/   
+│   └ HR_Data_Gen.ipynb   
+│      
 ├ README.md     
 └ requirements.txt   
 
