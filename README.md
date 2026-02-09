@@ -24,8 +24,8 @@ An interactive Tableau dashboard complements the Python analysis for executive e
 hr-analytics/   
 │   
 ├ notebooks/   
-│   ├ hr_storytelling_final.ipynb   
-│   └ hr_crispdm_final_report.ipynb   
+│   ├ hr_analytics.ipynb   
+│   └ CRISPDM_report.ipynb   
 │   
 ├ data/   
 │   └ HumanResources_India.csv   
