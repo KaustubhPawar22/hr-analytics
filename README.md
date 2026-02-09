@@ -1,4 +1,4 @@
-# HR Analytics — Workforce Insights & Attrition Trends
+# HR Analytics: Workforce Insights & Attrition Trends
 
 ## Overview
 
