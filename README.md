@@ -241,6 +241,7 @@ A future phase of this project could extend the synthetic dataset with behaviora
 These additions would enable modeling of employee experience over time and support more actionable retention analytics.
 
 This roadmap reflects how real organizations evolve from descriptive HR analytics toward predictive workforce intelligence.
+
 ---
 
 ## Author
