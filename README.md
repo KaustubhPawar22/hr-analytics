@@ -12,34 +12,68 @@ An interactive Tableau dashboard is used to explore hiring trends, workforce dem
 
 ---
 
-## Business Problem
+---
 
-HR teams often lack centralized visibility into workforce composition, attrition trends, and salary distribution. Decision-makers require intuitive dashboards that combine high-level KPIs with granular employee-level data.
+## 📊 Part A — Workforce Analytics (Business Storytelling)
 
-This project addresses the following needs:
+**File:** `notebooks/hr_storytelling_final.ipynb`
 
-- Monitor hiring and termination trends over time  
-- Understand workforce demographics and education levels  
-- Analyze salary patterns across departments, age groups, and gender  
-- Enable drill-down analysis through detailed employee records  
+This notebook focuses on descriptive analytics and strategic workforce insights.
+
+Key analyses include:
+
+- Workforce snapshot and attrition overview
+- Hiring and termination trends
+- Compensation architecture using median and interquartile ranges
+- Salary compression across support functions
+- Age vs salary relationship
+- Tenure-based attrition patterns
+- Executive insights and strategic recommendations
+
+### Key Findings
+
+- The organization operates across three compensation tiers (IT highest, Sales/Finance middle, support functions lowest)
+- Support roles experience salary compression with limited upward mobility
+- Age explains only ~2% of salary variance — compensation is primarily role-driven
+- Attrition occurs across multiple career stages rather than only early tenure
+- Limited internal mobility presents long-term retention risk
+
+This notebook answers:
+
+> *What is happening in the workforce, why it matters, and what leadership should do.*
+
+No machine learning is used in Part A — this is purely business analytics.
 
 ---
 
-## Dataset
+## 🤖 Part B — Attrition Modeling (CRISP-DM)
 
-Synthetic HR dataset containing **8,950 employee records** spanning 2015–2024.
+**File:** `notebooks/hr_crispdm_final_report.ipynb`
 
-### Key attributes include:
+This notebook implements a full CRISP-DM modeling pipeline:
 
-- Employee ID  
-- Gender, age, education level  
-- Department and job title  
-- Performance rating  
-- Salary and adjusted salary  
-- Hire and termination dates  
-- State and city  
+1. Business Understanding  
+2. Data Understanding  
+3. Feature Engineering  
+4. Feature–Attrition Association  
+5. Baseline Logistic Regression  
+6. Random Forest + Probability Calibration  
+7. Risk Scoring (demonstration only)  
+8. Executive Modeling Report  
 
-The dataset was generated using Python with controlled probability distributions to simulate realistic corporate workforce patterns.
+### Modeling Results
+
+- All static HR features show near-zero correlation with attrition
+- Logistic regression achieves recall only by generating excessive false positives
+- Random Forest collapses to majority-class prediction
+- ROC AUC < 0.5 confirms absence of predictive signal
+- Risk scores are illustrative only and not operationally usable
+
+### Core Conclusion
+
+Attrition cannot be reliably predicted using demographic and snapshot HR attributes alone.
+
+The modeling notebook demonstrates responsible analytics by identifying data limitations rather than forcing weak models into production.
 
 ---
 
@@ -73,58 +107,47 @@ The dashboard is structured into:
 
 ---
 
-## Tools Used
+## ⚠️ Important Notes
 
-- Python (synthetic data generation and preprocessing)  
-- Tableau (interactive dashboard development)  
-- Excel (data validation)  
-
----
-
-## Key Insights (Simulated Scenario)
-
-- Attrition appears highest among early-tenure employees, highlighting potential onboarding and engagement gaps  
-- Salary varies significantly across departments and education levels  
-- Higher education levels show correlation with stronger performance ratings  
-- Gender-based salary differences emerge in specific roles and education bands  
-- Compensation trends differ by age group across departments  
+- Dataset is synthetically generated for portfolio purposes.
+- Results are directional and intended to demonstrate analytical methodology.
+- Risk scores should not be operationalized.
+- Predictive retention requires behavioral data such as performance trends, promotions, engagement metrics, and manager changes.
 
 ---
 
-## Business Recommendations (Illustrative)
+## 🛠️ Requirements
 
-- Implement targeted retention programs for early-career employees  
-- Monitor department-level attrition metrics as early risk indicators  
-- Standardize compensation bands to reduce discrepancies  
-- Leverage performance insights to guide learning and development initiatives  
+Python 3.10+
 
----
+Main libraries:
 
-## Data Generation Methodology
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
+- scipy  
 
-Employee records were generated using Python with structured logic:
-
-- Gender distribution: 54% Male / 46% Female  
-- Department and job titles assigned via weighted probabilities  
-- Education levels mapped to job roles  
-- Salaries generated based on department-specific ranges  
-- Performance ratings assigned probabilistically  
-- Termination applied to 11.2% of employees with time-based constraints  
-- Adjusted salary calculated using age, gender, and education multipliers  
-
-This controlled approach enables realistic HR analytics scenarios while preserving data privacy.
+Both notebooks expect `HumanResources_India.csv` in the `/data` directory.
 
 ---
 
-## How to Run
+## 🎯 Skills Demonstrated
 
-1. Clone the repository  
-2. Install Python dependencies  
-3. Run the data generation script to create the dataset  
-4. Open the Tableau workbook or dashboard link  
+- Business analytics & executive storytelling  
+- Compensation architecture analysis (median + IQR)  
+- Workforce diagnostics  
+- CRISP-DM methodology  
+- Feature engineering  
+- Class imbalance handling  
+- Probability calibration  
+- Ethical model evaluation  
+- Strategic recommendation development  
 
 ---
 
 ## Author
 
-**Kaustubh Pawar**  
+Kaustubh Pawar  
+Portfolio: https://kaustubhpawar.com  
