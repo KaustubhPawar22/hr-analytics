@@ -21,14 +21,42 @@ An interactive Tableau dashboard complements the Python analysis for executive e
 
 ## Project Structure
 
-- notebooks/
-  - hr_storytelling_final.ipynb
-  - hr_crispdm_final_report.ipynb
-- data/
-  - HumanResources_India.csv
-- artifacts/
-- README.md
-- requirements.txt
+hr-analytics/   
+│   
+├ notebooks/   
+│   ├ hr_storytelling_final.ipynb   
+│   └ hr_crispdm_final_report.ipynb   
+│   
+├ data/   
+│   └ HumanResources_India.csv   
+│   
+├ scripts/   
+│   └ generate_hr_data.py   
+│   
+├ artifacts/   
+├ README.md     
+└ requirements.txt   
+
+---
+
+## 🧬 Data Generation
+
+The dataset used in this project is synthetically generated using Python.
+
+Script: scripts/generate_hr_data.py
+
+The generator simulates realistic HR attributes including:
+
+- demographics
+- hiring timelines
+- department distributions
+- job titles
+- salary ranges
+- education levels
+- performance ratings
+- termination events
+
+This ensures full reproducibility and transparency of assumptions.
 
 ---
 
