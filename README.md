@@ -1,16 +1,40 @@
-# HR Analytics Dashboard — Workforce Insights & Attrition Trends
+# HR Analytics — Workforce Insights & Attrition Trends
 
 ## Overview
 
-This project simulates a real-world HR analytics scenario using synthetically generated employee data to demonstrate end-to-end analytics workflows, dashboard design, and business insight generation.
+This project simulates a real-world HR analytics scenario using synthetically generated employee data to demonstrate professional analytics workflows, dashboard design, and business insight generation.
 
-The objective is to build a comprehensive HR dashboard that provides both executive-level summaries and detailed employee records to support data-driven workforce planning.
+The objective is to diagnose workforce structure, compensation dynamics, and attrition patterns, and to evaluate whether employee churn can be predicted using available HR data.
 
-An interactive Tableau dashboard is used to explore hiring trends, workforce demographics, performance patterns, and compensation metrics.
+The project is intentionally split into two parts:
 
-> **Note:** The dataset used in this project is synthetic and generated using Python. Insights are illustrative and intended to demonstrate analytical techniques rather than reflect real organizational data.
+- Business-focused workforce analytics (Part A)
+- CRISP-DM–based attrition modeling (Part B)
+
+This mirrors real analytics practice: **strategic insight first, predictive modeling second.**
+
+An interactive Tableau dashboard complements the Python analysis for executive exploration.
+
+> **Note:** The dataset used in this project is synthetic and generated using Python. Insights are illustrative and intended to demonstrate analytical methodology rather than reflect real organizational data.
 
 ---
+
+## Project Structure
+
+hr-analytics/
+│
+├ notebooks/
+│ ├ hr_storytelling_final.ipynb # Business insights & executive storytelling
+│ └ hr_crispdm_final_report.ipynb # CRISP-DM modeling pipeline
+│
+├ data/
+│ └ HumanResources_India.csv
+│
+├ artifacts/ # Optional PDFs / presentation assets
+├ README.md
+├ requirements.txt
+└ LICENSE
+
 
 ---
 
@@ -73,11 +97,13 @@ This notebook implements a full CRISP-DM modeling pipeline:
 
 Attrition cannot be reliably predicted using demographic and snapshot HR attributes alone.
 
-The modeling notebook demonstrates responsible analytics by identifying data limitations rather than forcing weak models into production.
+This is a **data limitation, not a modeling limitation.**
+
+The modeling notebook demonstrates responsible analytics by identifying missing behavioral drivers rather than forcing weak models into production.
 
 ---
 
-## Dashboard
+## 📊 Dashboard
 
 Interactive Tableau dashboard:
 
@@ -151,3 +177,4 @@ Both notebooks expect `HumanResources_India.csv` in the `/data` directory.
 
 Kaustubh Pawar  
 Portfolio: https://kaustubhpawar.com  
+
