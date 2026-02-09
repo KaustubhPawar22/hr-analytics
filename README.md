@@ -60,6 +60,39 @@ This ensures full reproducibility and transparency of assumptions.
 
 ---
 
+## 📘 Data Dictionary
+
+| Column | Description |
+|--------|------------|
+| employee_id | Unique employee identifier |
+| first_name | Employee first name |
+| last_name | Employee last name |
+| gender | Male / Female |
+| city | City of employment |
+| state | State of employment |
+| hiredate | Employee hire date |
+| termdate | Termination date (null if active) |
+| department | Department assignment |
+| job_title | Role title |
+| education_level | Highest education attained |
+| performance_rating | Most recent performance evaluation |
+| overtime | Indicates overtime status |
+| salary | Annual salary |
+| birthdate | Date of birth |
+
+### Engineered Fields (created during analysis)
+
+| Column | Description |
+|--------|------------|
+| age | Calculated from birthdate |
+| tenure_years | Years since hire |
+| is_terminated | Boolean attrition flag |
+| hire_year | Year hired |
+| tenure_band | Binned tenure category |
+| salary_to_dept_median | Salary normalized by department median |
+
+---
+
 ## Part A — Workforce Analytics (Business Storytelling)
 
 **File:** `notebooks/hr_analytics.ipynb`
