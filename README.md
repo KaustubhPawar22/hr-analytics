@@ -88,7 +88,6 @@ This ensures full reproducibility and transparency of assumptions.
 | tenure_years | Length of service in years calculated from hiredate |
 | is_terminated | Boolean flag indicating employee attrition (True = terminated) |
 | hire_year | Year employee was hired |
-| tenure_band | Tenure segmentation bucket (0–2, 2–5, 5–8, 8+ years) |  
 | salary_to_dept_median | Salary normalized by department median |
 
 ---
