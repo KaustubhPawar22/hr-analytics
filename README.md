@@ -226,6 +226,23 @@ Both notebooks expect `HumanResources_India.csv` in the `/data` directory.
 
 ---
 
+## Future Enhancements
+
+Initial modeling revealed that static HR attributes alone are insufficient for reliable attrition prediction.
+
+A future phase of this project could extend the synthetic dataset with behavioral variables such as:
+
+- Promotion history
+- Engagement survey scores
+- Manager changes
+- Salary growth trajectories
+- Absenteeism patterns
+
+These additions would enable modeling of employee experience over time and support more actionable retention analytics.
+
+This roadmap reflects how real organizations evolve from descriptive HR analytics toward predictive workforce intelligence.
+---
+
 ## Author
 
 Kaustubh Pawar  
